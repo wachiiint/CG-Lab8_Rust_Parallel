@@ -146,6 +146,7 @@ impl State {
         // You need to bind:
         //   - binding 0: view_params_buffer (uniform buffer with view parameters)
         //   - binding 1: high_res_texture_view (storage texture for output)
+        //DONE
         let compute_bind_group = device.create_bind_group(&wgpu::BindGroupDescriptor {
             label: Some("Compute Bind Group"),
             layout: &compute_bind_group_layout,
@@ -163,6 +164,7 @@ impl State {
 
         // TODO: Create the compute pipeline layout
         // This defines the overall structure of bind groups used by the pipeline
+        //DONE
         let compute_pipeline_layout =
             device.create_pipeline_layout(&wgpu::PipelineLayoutDescriptor {
                 label: Some("Compute Pipeline Layout"),
